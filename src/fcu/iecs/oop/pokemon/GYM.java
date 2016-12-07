@@ -45,7 +45,7 @@ public class GYM {
 	}
 	
 	
-		//分別戰鬥
+		//分別戰鬥函式
 		public static void fight(Pokemon a, Pokemon b){
 			
 			if(a.getTYPE() == PokemonType.FIRE){
