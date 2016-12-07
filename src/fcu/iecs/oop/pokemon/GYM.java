@@ -7,124 +7,6 @@ public class GYM {
 	static int w1 = 0;
 	static int w2 = 0;
 	
-	//分別戰鬥
-	public static void fight(Pokemon a, Pokemon b){
-		
-		if(a.getTYPE() == PokemonType.FIRE){
-			
-			if(b.getTYPE() == PokemonType.WATER){
-				
-				w2++;
-			}
-			
-			if(b.getTYPE() == PokemonType.GRASS){
-				
-				w1++;
-			}
-			
-			if(b.getTYPE() == PokemonType.FIRE){
-				
-				if(a.getCP() > b.getCP()){
-					
-					w1++;
-				}
-				
-				if(a.getCP() < b.getCP()){
-					
-					w2++;
-				}
-				
-				if(a.getCP() == b.getCP()){
-					
-					Random r = new Random();
-					
-					if(r.nextInt(2)==1){
-						w1++;
-					}
-					else{
-						w2++;
-					}
-				}
-			}
-		}
-		
-		if(a.getTYPE() == PokemonType.WATER){
-			
-			if(b.getTYPE() == PokemonType.GRASS){
-				
-				w2++;
-			}
-			
-			if(b.getTYPE() == PokemonType.FIRE){
-				
-				w1++;
-			}
-			
-			if(b.getTYPE() == PokemonType.WATER){
-				
-				if(a.getCP() > b.getCP()){
-					
-					w1++;
-				}
-				
-				if(a.getCP() < b.getCP()){
-					
-					w2++;
-				}
-				
-				if(a.getCP() == b.getCP()){
-					
-					Random r = new Random();
-					
-					if(r.nextInt(2)==1){
-						w1++;
-					}
-					else{
-						w2++;
-					}
-				}
-			}
-		}
-		
-		if(a.getTYPE() == PokemonType.GRASS){
-			
-			if(b.getTYPE() == PokemonType.FIRE){
-				
-				w2++;
-			}
-			
-			if(b.getTYPE() == PokemonType.WATER){
-				
-				w1++;
-			}
-			
-			if(b.getTYPE() == PokemonType.GRASS){
-				
-				if(a.getCP() > b.getCP()){
-					
-					w1++;
-				}
-				
-				if(a.getCP() < b.getCP()){
-					
-					w2++;
-				}
-				
-				if(a.getCP() == b.getCP()){
-					
-					Random r = new Random();
-					
-					if(r.nextInt(2)==1){
-						w1++;
-					}
-					else{
-						w2++;
-					}
-				}
-			}
-		}
-	}
-	
 	public static Player fight(Player...players){
 		//將pokemon從矩陣取出
 		Player player1 = players[0];
@@ -161,4 +43,123 @@ public class GYM {
 		}
 		
 	}
+	
+	
+		//分別戰鬥
+		public static void fight(Pokemon a, Pokemon b){
+			
+			if(a.getTYPE() == PokemonType.FIRE){
+				
+				if(b.getTYPE() == PokemonType.WATER){
+					
+					w2++;
+				}
+				
+				if(b.getTYPE() == PokemonType.GRASS){
+					
+					w1++;
+				}
+				
+				if(b.getTYPE() == PokemonType.FIRE){
+					
+					if(a.getCP() > b.getCP()){
+						
+						w1++;
+					}
+					
+					if(a.getCP() < b.getCP()){
+						
+						w2++;
+					}
+					
+					if(a.getCP() == b.getCP()){
+						
+						Random r = new Random();
+						
+						if(r.nextInt(2)==1){
+							w1++;
+						}
+						else{
+							w2++;
+						}
+					}
+				}
+			}
+			
+			if(a.getTYPE() == PokemonType.WATER){
+				
+				if(b.getTYPE() == PokemonType.GRASS){
+					
+					w2++;
+				}
+				
+				if(b.getTYPE() == PokemonType.FIRE){
+					
+					w1++;
+				}
+				
+				if(b.getTYPE() == PokemonType.WATER){
+					
+					if(a.getCP() > b.getCP()){
+						
+						w1++;
+					}
+					
+					if(a.getCP() < b.getCP()){
+						
+						w2++;
+					}
+					
+					if(a.getCP() == b.getCP()){
+						
+						Random r = new Random();
+						
+						if(r.nextInt(2)==1){
+							w1++;
+						}
+						else{
+							w2++;
+						}
+					}
+				}
+			}
+			
+			if(a.getTYPE() == PokemonType.GRASS){
+				
+				if(b.getTYPE() == PokemonType.FIRE){
+					
+					w2++;
+				}
+				
+				if(b.getTYPE() == PokemonType.WATER){
+					
+					w1++;
+				}
+				
+				if(b.getTYPE() == PokemonType.GRASS){
+					
+					if(a.getCP() > b.getCP()){
+						
+						w1++;
+					}
+					
+					if(a.getCP() < b.getCP()){
+						
+						w2++;
+					}
+					
+					if(a.getCP() == b.getCP()){
+						
+						Random r = new Random();
+						
+						if(r.nextInt(2)==1){
+							w1++;
+						}
+						else{
+							w2++;
+						}
+					}
+				}
+			}
+		}
 }
